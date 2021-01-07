@@ -42,7 +42,7 @@ class Dog
   
   def self.new_from_d(attributes)
     id = attributes[0]
-    name = row[1]
+    name = attributes[1]
     breed = row[2]
     self.new(id, name, breed)
   end 
