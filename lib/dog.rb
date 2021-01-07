@@ -41,10 +41,12 @@ class Dog
   end
   
   def self.new_from_db(attributes)
-    id = attributes[0]
-    name = attributes[1]
-    breed = attributes[2]
-    self.new(id, name, breed)
+   attributes_hash = {
+      :id => row[0],
+      :name => row[1],
+      :breed => row[2]
+    }
+    self.new(attributes_hash)
   end 
 
   def self.find_by_name(name)
