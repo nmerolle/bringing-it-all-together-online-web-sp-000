@@ -40,7 +40,7 @@ class Dog
     dog
   end
   
-  def self.new_from_d(attributes)
+  def self.new_from_db(attributes)
     id = attributes[0]
     name = attributes[1]
     breed = attributes[2]
