@@ -53,6 +53,8 @@ class Dog
     sql = "SELECT * FROM dogs WHERE name = ?"
     DB[:conn].execute(sql, name).map { |row| new_from_db(row) }.first
   end
+  
+  
 end
 
 
